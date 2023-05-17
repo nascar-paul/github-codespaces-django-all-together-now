@@ -42,10 +42,7 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     "django_browser_reload",
-
-    # Local apps
-    # Apps that you create
-    # Apps that are preconfigured
+    "welcome_app",
 ]
 
 MIDDLEWARE = [
