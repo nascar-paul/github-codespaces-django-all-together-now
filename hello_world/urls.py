@@ -17,6 +17,9 @@ from django.contrib import admin
 from django.urls import path, include
 from Recommendations_app import views
 
+from info import views
+path("Information/", views.index,name="index")
+
 from hello_world.core import views as core_views
 from welcome_app import views
 
