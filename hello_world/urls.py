@@ -16,18 +16,19 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from Recommendations_app import views
+from welcome_app import views
+from info import views
 
 from info import views
 path("Information/", views.index,name="index")
 
 from hello_world.core import views as core_views
-from welcome_app import views
+
 
 urlpatterns = [
 
     path("", core_views.index),
     path("Recommendations_app/", views.index, name="index"),
-
     path("admin/", admin.site.urls),
     path("__reload__/", include("django_browser_reload.urls")),
     path("welcome/", views.index)
