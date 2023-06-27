@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>High School Coding Class</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js"></script>
+</head>
+
+<body>
+  <header>
+    <nav class="bottom-navigation">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#topics">Topics</a></li>
+        <li><a href="#resources">Resources</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home">
+      <div class="hero-image">
+        <img src="students-collaborating.jpg" alt="Students collaborating on coding projects">
+      </div>
+      <div class="content">
+        <h1>Welcome to High School Coding Class</h1>
+        <p>Learn to code and explore the exciting world of programming!</p>
+      </div>
+    </section>
+
+    <section id="topics">
+      <div class="tabbed-layout">
+        <div class="tab">
+          <button class="tab-button" onclick="openTab(event, 'html')">HTML</button>
+          <button class="tab-button" onclick="openTab(event, 'css')">CSS</button>
+          <button class="tab-button" onclick="openTab(event, 'javascript')">JavaScript</button>
+        </div>
+        <div class="tab-content" id="html">
+          <h2>HTML</h2>
+          <p>Learn the fundamentals of HTML and create web pages.</p>
+        </div>
+        <div class="tab-content" id="css">
+          <h2>CSS</h2>
+          <p>Style your web pages using CSS to make them visually appealing.</p>
+        </div>
+        <div class="tab-content" id="javascript">
+          <h2>JavaScript</h2>
+          <p>Make your web pages interactive and dynamic with JavaScript.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="resources">
+      <aside class="side-navigation">
+        <ul>
+          <li><a href="#tutorials">Tutorials</a></li>
+          <li><a href="#examples">Code Examples</a></li>
+          <li><a href="#tools">Development Tools</a></li>
+        </ul>
+      </aside>
+      <div class="resources-content">
+        <h2>Resources</h2>
+        <h3>Tutorials</h3>
+        <ul>
+          <li>HTML Basics</li>
+          <li>CSS Styling Techniques</li>
+          <li>JavaScript Fundamentals</li>
+        </ul>
+        <h3>Code Examples</h3>
+        <ul>
+          <li>Responsive Web Design</li>
+          <li>Animated CSS Transitions</li>
+          <li>DOM Manipulation with JavaScript</li>
+        </ul>
+        <h3>Development Tools</h3>
+        <ul>
+          <li>Visual Studio Code</li>
+          <li>Chrome DevTools</li>
+          <li>Git Version Control</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <p>If you have any questions or inquiries, feel free to reach out to us.</p>
+      <form>
+        <input type="text" placeholder="Name">
+        <input type="email" placeholder="Email">
+        <textarea placeholder="Message"></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2023 High School Coding Class. All rights reserved.</p>
+  </footer>
+</body>
+
+</html>
